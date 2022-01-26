@@ -1,0 +1,49 @@
+form {
+  padding: 2rem;
+  width: 70%;
+  margin-left: 2rem;
+  background: #fff;
+}
+.newUserForm {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 5px;
+}
+form input,
+form select {
+  border: 1px solid gray;
+  border-radius: 5px;
+  min-width: 300px;
+  min-height: 24px;
+  margin: 10px auto;
+  padding: 4px 10px;
+}
+input:focus,
+select:focus {
+  outline: none;
+}
+option {
+  border-radius: 5px;
+}
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formSubmit {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  min-width: 300px;
+  min-height: 24px;
+  margin: 10px auto;
+  padding: 4px 10px;
+  background-color: #33ff33;
+}
+.inputWrapper {
+  flex: 1;
+}

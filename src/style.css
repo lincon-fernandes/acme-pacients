@@ -1,0 +1,115 @@
+body {
+  background-color: #aaa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+}
+.header {
+  height: 25px;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 3px 26px -3px #000000;
+  box-shadow: 0px 3px 26px -3px #000000;
+  margin-bottom: 2rem;
+}
+.main {
+  display: flex;
+}
+.inputSearch {
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.inputSearch:focus {
+  outline: none;
+}
+.controllers {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+}
+.newClient {
+  cursor: pointer;
+  border: none;
+  margin: 0 5px;
+  min-width: 100px;
+  padding: 1px 10px;
+  border-radius: 5px;
+  background: #33ff33;
+}
+.newUserButtons {
+  cursor: pointer;
+  border: none;
+  min-width: 100px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #3333ff;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.clientsContainer {
+  width: 70%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.clientContainer {
+  background: white;
+  border-radius: 5px;
+  padding: 2rem;
+  border: 1px solid #333;
+  margin-bottom: 1rem;
+}
+.borderRed {
+  border: 3px solid red;
+}
+.clientInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.clientName {
+  font-weight: bold;
+}
+.setLocalStorage {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  min-height: 24px;
+  padding: 4px 10px;
+  background-color: #33ff33;
+}
+.edit {
+  cursor: pointer;
+  justify-content: flex-end;
+  display: flex;
+}
+.userEditRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 2px;
+}
+.editOptions {
+  display: flex;
+  gap: 10px;
+  margin-right: 1rem;
+  justify-content: end;
+}
