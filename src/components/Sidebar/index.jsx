@@ -16,7 +16,12 @@ export default function Sidebar({
           <li className="sidebarListItem">
             <input
               className="inputSearch"
-              placeholder="bucar pelo nome"
+              placeholder="buscar pelo nome"
+              onKeyDown={(e) => {
+                if (e.keyCode === 13) {
+                  findUser(userQuery);
+                }
+              }}
               onChange={(e) => {
                 setUserQuery(e.target.value);
               }}
