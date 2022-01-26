@@ -63,8 +63,9 @@ export default function Form({ newUser, setUsers, setNewUser, users }) {
       var Soma;
       var Resto;
       Soma = 0;
-      const existCpf = clients.find((client) => client.cpf === strCPF);
+      const existCpf = clients.find((client) => client.cpf === cpf);
       if (existCpf) {
+        window.alert('cpf ja cadastrado no sistema');
         return false;
       }
       if (strCPF === '00000000000') return false;
@@ -107,7 +108,7 @@ export default function Form({ newUser, setUsers, setNewUser, users }) {
 
   return (
     <form onSubmit={(e) => submitHandler(e, cpf)} className="newUserForm">
-      <div className="formRow">
+      <div className="newUserformRow">
         <div className="inputWrapper">
           <label>nome *</label>
           <input onChange={(e) => setName(e.target.value)} />
@@ -117,22 +118,25 @@ export default function Form({ newUser, setUsers, setNewUser, users }) {
           <input type="date" onChange={(e) => setbirth(e.target.value)} />
         </div>
       </div>
-      <div className="inputWrapper">
-        <label>cpf *</label>
-        <input value={cpf} maxLength={14} onChange={(e) => handleCpf(e)} />
+      <div className="newUserformRow">
+        <div className="newUserInputWrapper">
+          <label>cpf *</label>
+          <input value={cpf} maxLength={14} onChange={(e) => handleCpf(e)} />
+        </div>
+
+        <div className="newUserInputWrapper">
+          <label>genero *</label>
+          <select name="select" onChange={(e) => handleGender(e)}>
+            <option value="masculino" defaultValue>
+              masculino
+            </option>
+            <option value="feminino">feminino</option>
+            <option value="nao informado">nao informado</option>
+          </select>
+        </div>
       </div>
-      <div className="inputWrapper">
-        <label>genero *</label>
-        <select name="select" onChange={(e) => handleGender(e)}>
-          <option value="masculino" defaultValue>
-            masculino
-          </option>
-          <option value="feminino">feminino</option>
-          <option value="nao informado">nao informado</option>
-        </select>
-      </div>
-      <div className="formRow">
-        <div className="inputWrapper">
+      <div className="newUserformRow">
+        <div className="newUserInputWrapper">
           <label>rua</label>
           <input
             id="ad"
@@ -140,25 +144,27 @@ export default function Form({ newUser, setUsers, setNewUser, users }) {
             onChange={(e) => handleAdressStreet(e)}
           />
         </div>
-        <div className="inputWrapper">
+        <div className="newUserInputWrapper">
           <label>numero</label>
           <input onChange={(e) => handleAdressStreetNumber(e)} />
         </div>
-        <div className="inputWrapper">
+      </div>
+      <div className="newUserformRow">
+        <div className="newUserInputWrapper">
           <label>bairro</label>
           <input onChange={(e) => handleAdressDistrict(e)} />
         </div>
-        <div className="inputWrapper">
+        <div className="newUserInputWrapper">
           <label>cidade</label>
           <input onChange={(e) => handleAdressCity(e)} />
         </div>
-        <div style={{ gridColumn: ' span 2' }} className="inputWrapper">
+        <div style={{ gridColumn: ' span 2' }} className="newUserInputWrapper">
           <label>estado</label>
           <input onChange={(e) => handleAdressState(e)} />
         </div>
       </div>
 
-      <div className="inputWrapper">
+      <div className="newUserInputWrapper">
         <label>status *</label>
         <select onChange={(e) => handleStatus(e)} name="select">
           <option value="ativo" defaultValue>

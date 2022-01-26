@@ -24,6 +24,9 @@ body {
 .main {
   display: flex;
 }
+.mainContainer {
+  width: 100%;
+}
 .inputSearch {
   margin-bottom: 1rem;
   border: none;
@@ -99,17 +102,13 @@ body {
   justify-content: flex-end;
   display: flex;
 }
-.userEditRow {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10px 2px;
-}
+
 .editOptions {
   display: flex;
   gap: 10px;
   margin-right: 1rem;
-  justify-content: end;
+  justify-content: flex-end;
+}
+.textLight {
+  font-weight: 100;
 }
