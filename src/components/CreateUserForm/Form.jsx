@@ -103,6 +103,7 @@ export default function Form({ newUser, setUsers, setNewUser, users }) {
 
   return (
     <form onSubmit={(e) => submitHandler(e, cpf)} className="newUserForm">
+      <h3>Novo Usuário</h3>
       <div className="newUserformRow">
         <div className="inputWrapper">
           <label>nome *</label>

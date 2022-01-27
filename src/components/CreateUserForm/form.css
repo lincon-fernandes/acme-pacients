@@ -30,6 +30,15 @@
   justify-content: space-between;
   align-items: center;
 }
+
+label {
+  text-transform: capitalize;
+}
+
+h3 {
+  text-align: center;
+}
+
 .newUserInputWrapper {
   display: flex;
   flex-direction: column;
