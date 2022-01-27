@@ -104,23 +104,41 @@ export default function Main({
                         <Edit />
                       </span>
                     </div>
-                    <div>
-                      <p className="">nascimento: {client.birth}</p>
-                      <p className="">cpf: {client.cpf}</p>
-                      <p className="">genero: {client.gender}</p>
+                    <div className="clientInfo">
+                      <p className="">
+                        <b>nascimento:</b> {client.birth}
+                      </p>
+                      <p className="">
+                        <b>cpf:</b> {client.cpf}
+                      </p>
+                      <p className="">
+                        <b>genero:</b> {client.gender}
+                      </p>
                     </div>
-                    <p style={{ fontWeight: 'bold' }}>endereço:</p>
-                    <p>
-                      rua {client.adress.street} n {client.adress.number}
-                    </p>
-                    <p>
-                      {client.adress.district}
-                      {' - '}
-                      {client.adress.city}
-                      {', '}
-                      {client.adress.state}
-                    </p>
-                    <p>status: {client.status}</p>
+                    <div className="clientInfo">
+                      <p>
+                        <b>Endereço</b>
+                      </p>
+                    </div>
+                    <div className="clientInfo">
+                      <p>
+                        <b>Rua:</b> {client.adress.street}{' '}
+                      </p>
+                      <p>
+                        <b>Nº:</b> {client.adress.number}
+                      </p>
+                      <p>
+                        <b>Bairro:</b> {client.adress.district}
+                      </p>
+                      <p>
+                        <b>Cidade: </b>
+                        {client.adress.city}
+                      </p>
+                      <p>
+                        <b>UF: </b>
+                        {client.adress.state}
+                      </p>
+                    </div>
                   </div>
                 )
               )
