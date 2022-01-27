@@ -26,27 +26,22 @@ export default function Form({ newUser, setUsers, setNewUser, users }) {
   const handleAdressStreet = (e) => {
     adress.street = e.target.value;
     setAdress(adress);
-    console.log(adress);
   };
   const handleAdressStreetNumber = (e) => {
     adress.number = e.target.value;
     setAdress(adress);
-    console.log(adress);
   };
   const handleAdressDistrict = (e) => {
     adress.district = e.target.value;
     setAdress(adress);
-    console.log(adress);
   };
   const handleAdressCity = (e) => {
     adress.city = e.target.value;
     setAdress(adress);
-    console.log(adress);
   };
   const handleAdressState = (e) => {
     adress.state = e.target.value;
     setAdress(adress);
-    console.log(adress);
   };
 
   const submitHandler = (e, cpf) => {

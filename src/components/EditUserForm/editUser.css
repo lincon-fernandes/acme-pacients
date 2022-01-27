@@ -19,3 +19,15 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+.editOptions {
+  display: flex;
+  gap: 10px;
+  margin-right: 1rem;
+  justify-content: flex-end;
+}
+.editOptions {
+  display: flex;
+  gap: 10px;
+  margin-right: 1rem;
+  justify-content: flex-end;
+}

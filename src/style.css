@@ -1,7 +1,11 @@
 body {
-  background-color: #aaa;
+  background-color: #ceebf8;
   margin: 0;
   padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
   box-sizing: border-box;
 }
 ::-webkit-scrollbar {
@@ -14,50 +18,20 @@ body {
   background-color: rgb(179, 179, 179);
 }
 .header {
+  font-size: 1.2em;
+  color: white;
+  font-weight: bold;
   height: 25px;
   padding: 1rem 2rem;
-  background-color: #fff;
+  background-color: rgb(0, 82, 107);
   -webkit-box-shadow: 0px 3px 26px -3px #000000;
   box-shadow: 0px 3px 26px -3px #000000;
-  margin-bottom: 2rem;
 }
 .main {
   display: flex;
 }
 .mainContainer {
   width: 100%;
-}
-.inputSearch {
-  margin-bottom: 1rem;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-}
-.inputSearch:focus {
-  outline: none;
-}
-.controllers {
-  display: flex;
-  justify-content: center;
-  max-width: 800px;
-  margin: auto;
-}
-.newClient {
-  cursor: pointer;
-  border: none;
-  margin: 0 5px;
-  min-width: 100px;
-  padding: 1px 10px;
-  border-radius: 5px;
-  background: #33ff33;
-}
-.newUserButtons {
-  cursor: pointer;
-  border: none;
-  min-width: 100px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background: #3333ff;
 }
 
 .inputWrapper {
@@ -71,10 +45,12 @@ body {
   margin-right: 2rem;
 }
 .clientContainer {
+  margin: auto;
+  margin-top: 2.5%;
+  margin-left: 10%;
   background: white;
-  border-radius: 5px;
-  padding: 2rem;
-  border: 1px solid #333;
+  border-radius: 25px;
+  padding: 1rem 3rem;
   margin-bottom: 1rem;
 }
 .borderRed {
@@ -87,7 +63,16 @@ body {
   padding: 0 10px;
 }
 .clientName {
+  font-size: 1.4em;
+  text-transform: capitalize;
   font-weight: bold;
+}
+
+.status {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-left: 1%;
+  margin-top: -1%;
 }
 .setLocalStorage {
   border: none;
@@ -102,13 +87,9 @@ body {
   justify-content: flex-end;
   display: flex;
 }
-
-.editOptions {
+.clientInfo {
   display: flex;
-  gap: 10px;
-  margin-right: 1rem;
-  justify-content: flex-end;
-}
-.textLight {
-  font-weight: 100;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5%;
 }

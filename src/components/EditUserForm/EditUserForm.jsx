@@ -51,7 +51,6 @@ export default function EditUserForm({
         <div className="editInputWrapper">
           <label>rua</label>
           <input
-            id="ad"
             value={adress.street}
             onChange={({ target: { value } }) =>
               setAdress({ ...adress, street: value })
